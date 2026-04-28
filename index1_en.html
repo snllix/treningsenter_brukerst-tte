@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - FitLife Fitness Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index_en.html" class="logo" style="text-decoration: none; color: white;">FitLife</a>
+            <nav>
+                <ul>
+                    <li><a href="index_en.html">Home</a></li>
+                    <li><a href="index_en.html#classes">Classes</a></li>
+                    <li><a href="index1_en.html">Support</a></li>
+                    <li style="border-left: 1px solid rgba(255,255,255,0.3); padding-left: 2rem;"><a href="index1.html">Norsk</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="index_en.html">Home</a> > <span>Support</span>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Support & Help</h1>
+        <p>Find answers to your questions or contact us directly</p>
+    </section>
+
+    <!-- Quick Support Cards -->
+    <section class="container" style="padding: 4rem 2rem;">
+        <h2>Quick Help</h2>
+        <div class="support-grid">
+            <div class="support-card">
+                <h3>❓ Frequently Asked Questions</h3>
+                <p>See answers to frequently asked questions about membership, classes, and equipment.</p>
+            </div>
+            <div class="support-card">
+                <h3>📱 Chat Support</h3>
+                <p>Chat with us between 09:00-17:00, Monday to Friday.</p>
+            </div>
+            <div class="support-card">
+                <h3>🧘 Yoga Booking Guide</h3>
+                <p>Learn how to easily book yoga classes and follow a step-by-step guide.</p>
+                <a href="yoga_guide_en.html" style="color: #00a86b; text-decoration: none; font-weight: bold; margin-top: 1rem; display: inline-block;">Read Guide →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>How do I register as a member?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>You can register directly on our website by selecting your desired membership plan. You only need to fill in your contact information and choose a payment method. You get immediate access after payment is confirmed.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>Can I pause my membership?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, you can pause your membership for up to 2 months per year. Contact customer service at info@fitlife.no or call +47 22 11 22 33. There is no charge for pausing.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>What equipment is available at the fitness center?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We have state-of-the-art equipment including: free weights, machines, cardio equipment (treadmills, bikes, cross trainers), cable apparatus, and flexibility equipment. All equipment is maintained daily and inspected monthly.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>Is personal training available?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! We offer personal training to all members. Your first consultation is free. Personal training prices start from 399 kr per hour. Quarter and year memberships include consultations.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>What if I forget my ID card?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>You can show your membership information on your phone or tell the staff your name so they can verify it in the system. We recommend downloading the FitLife app for easy access.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>What are the opening hours?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p><strong>Monday - Friday:</strong> 06:00 - 22:00<br><strong>Saturday:</strong> 08:00 - 20:00<br><strong>Sunday:</strong> 10:00 - 18:00<br><br>We are closed on public holidays. Questions? Call us at +47 22 11 22 33</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>Is there parking available?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we have free parking available for members in our parking basement. Parking spaces are limited, so we recommend arriving 10-15 minutes before your scheduled workout during peak hours.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>What are the shower and locker room rules?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Showers and lockers are available for all members. Each locker requires 20 kr coin (returned). We provide free towels, and you'll find shampoo, conditioner and soap in all showers. We recommend taking your valuables with you.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>Can I get a refund if I'm dissatisfied?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We offer a 14-day trial period for new members. If you're not satisfied, you can get a full refund within this period. After 14 days, you can cancel at any time with 30 days notice.</p>
+                </div>
+            </section>
+
+    <!-- Contact Form Section -->
+    <section class="form-section">
+        <div class="container">
+            <h2>Contact Us Directly</h2>
+            <p style="margin-bottom: 2rem; color: #666;">Do you have questions not answered above? Fill out the form below and we'll contact you within 24 hours.</p>
+
+            <form onsubmit="handleSubmit(event)">
+                <h3 style="color: #2ecc71; margin-bottom: 1.5rem;">Contact Information</h3>
+
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <h3 style="color: #2ecc71; margin: 2rem 0 1.5rem 0;">Your Question</h3>
+
+                <div class="form-group">
+                    <label for="category">Category *</label>
+                    <select id="category" name="category" required>
+                        <option value="">Choose category...</option>
+                        <option value="membership">Membership</option>
+                        <option value="classes">Classes</option>
+                        <option value="equipment">Equipment</option>
+                        <option value="billing">Billing</option>
+                        <option value="facilities">Facilities</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <div style="text-align: center;">
+                    <button type="submit" class="btn">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Kontakt info -->
+    <section style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2>Direct Contact</h2>
+            <div class="support-grid">
+                <div class="support-card">
+                    <h3>📞 Phone</h3>
+                    <p><strong>+47 22 11 22 33</strong></p>
+                    <p style="font-size: 0.9rem; color: #666;">Monday-Friday: 06:00-22:00<br>Saturday-Sunday: 08:00-20:00</p>
+                </div>
+                <div class="support-card">
+                    <h3>📧 Email</h3>
+                    <p><strong><a href="mailto:info@fitlife.no" style="color: #00a86b; text-decoration: none;">info@fitlife.no</a></strong></p>
+                    <p style="font-size: 0.9rem; color: #666;">Reply within 24 hours</p>
+                </div>
+                <div class="support-card">
+                    <h3>📍 Visit Us</h3>
+                    <p><strong>Hovedgaten 42</strong><br>0150 Oslo</p>
+                    <p style="font-size: 0.9rem; color: #666;">See opening hours above</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 FitLife Fitness Center. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleAnswer(element) {
+            const answer = element.nextElementSibling;
+            const toggle = element.querySelector('.faq-toggle');
+            
+            // Close other open answers
+            document.querySelectorAll('.faq-answer.open').forEach(item => {
+                if (item !== answer) {
+                    item.classList.remove('open');
+                    item.previousElementSibling.querySelector('.faq-toggle').textContent = '+';
+                }
+            });
+            
+            // Toggle current answer
+            answer.classList.toggle('open');
+            toggle.textContent = answer.classList.contains('open') ? '−' : '+';
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            
+            alert(`Thank you ${name}! Your message has been received. We will contact you at ${email} within 24 hours.`);
+            
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>

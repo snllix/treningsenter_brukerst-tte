@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brukerstøtte - FitLife Treningssentrum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo" style="text-decoration: none; color: white;">💪 FitLife</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="index.html#classes">Klasser</a></li>
+                    <li><a href="index1.html">Brukerstøtte</a></li>
+                    <li style="border-left: 1px solid rgba(255,255,255,0.3); padding-left: 2rem;"><a href="index1_en.html">English</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="index.html">Hjem</a> > <span>Brukerstøtte</span>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Brukerstøtte & Hjelp</h1>
+        <p>Finn svar på dine spørsmål eller kontakt oss direkte</p>
+    </section>
+
+    <!-- Quick Support Cards -->
+    <section class="container" style="padding: 4rem 2rem;">
+        <h2>Rask Hjelp</h2>
+        <div class="support-grid">
+            <div class="support-card">
+                <h3>❓ Vanlige Spørsmål</h3>
+                <p>Se svar på hyppig stilte spørsmål om medlemskap, klasser og utstyr.</p>
+            </div>
+            <div class="support-card">
+                <h3>📱 Chat Hjelp</h3>
+                <p>Snakk med oss på chat mellom 09:00-17:00, mandag-fredag.</p>
+            </div>
+            <div class="support-card">
+                <h3>🧘 Yoga Bookingguide</h3>
+                <p>Lær hvordan du enkelt booker yoga klasser og følg steg-for-steg veiledning.</p>
+                <a href="yoga_guide.html" style="color: #00a86b; text-decoration: none; font-weight: bold; margin-top: 1rem; display: inline-block;">Les guiden →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Ofte Stilte Spørsmål (FAQ)</h2>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>Hvordan registrerer jeg meg som medlem?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Du kan registrere deg direkte på vår nettside ved å velge ønsket medlemskapsplan. Du trenger kun å fylle inn dine kontaktopplysninger og velge betalingsmetode. Du får umiddelbar tilgang etter betaling er bekreftet.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>Kan jeg pausere medlemskapet mitt?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Ja, du kan pausere medlemskapet for opptil 2 måneder per år. Du kontakter kundeservice på info@fitlife.no eller ringer +47 22 11 22 33. Det er ingen kostnad for å pausere.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>Hvilken utstyr finnes på treningssenteret?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Vi har state-of-the-art treningsutstyr inkludert: frivekter, maskiner, cardio-utstyr (løpebånd, sykler, crosstrainer), kabelapparater, og fleksibilitetsutstyr. Alt utstyr vedlikeholdes daglig og inspekteres månedlig.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>Er det personal trenier tilgjengelig?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Ja! Vi tilbyr personal treining til alle medlemmer. Ditt første konsultasjonssamtale er gratis. Priser for personal trening starter fra 399 kr per time. Kvartål- og årmedlemskap inkluderer konsultasjoner.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>Hva hvis jeg glemmer ID-kortet mitt?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Du kan vise din medlemskapsinformasjon på mobilen eller fortelle personalet ditt navn slik at de kan verifisere det i systemet. Vi anbefaler å laste ned FitLife-appen for enkel adgang.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>Hva er åpningstidene?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p><strong>Mandag - Fredag:</strong> 06:00 - 22:00<br><strong>Lørdag:</strong> 08:00 - 20:00<br><strong>Søndag:</strong> 10:00 - 18:00<br><br>Vi er stengt på offentlige helligdager. Spørsmål? Ring oss på +47 22 11 22 33</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>Finnes det parkering?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Ja, vi har gratis parkering tilgjengelig for medlemmer i vår parkeringskjeller. Parkeringsplass er begrenset, så vi anbefaler å komme 10-15 minutter før din planlagte treningstid i rushørene.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>Hva er reglene for dusj- og garderobefasiliteter?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Dusj og garderobe er tilgjengelige for alle medlemmer. Hvert garderobeskapet krever 20 kr mynt (returneres). Vi tilbyr gratis håndklær, og du finner sjampo, balsam og såpe i alle dusjar. Vi anbefaler å ta med dine verdisaker.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>Kan jeg få refund hvis jeg er misfornøyd?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Vi tilbyr en 14-dagers prøveperiode for nye medlemmer. Hvis du ikke er fornøyd, kan du få full refund innen denne perioden. Etter 14 dager kan du si opp på hvilket som helst tidspunkt med 30 dagers varsel.</p>
+                </div>
+            </section>
+
+    <!-- Contact Form Section -->
+    <section class="form-section">
+        <div class="container">
+            <h2>Kontakt Oss Direkte</h2>
+            <p style="margin-bottom: 2rem; color: #666;">Har du spørsmål som ikke besvares ovenfor? Fyll ut skjemaet nedenfor og vi tar kontakt innen 24 timer.</p>
+
+            <form onsubmit="handleSubmit(event)">
+                <h3 style="color: #2ecc71; margin-bottom: 1.5rem;">Kontaktinformasjon</h3>
+
+                <div class="form-group">
+                    <label for="name">Navn *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-post *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefon</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <h3 style="color: #667eea; margin: 2rem 0 1.5rem 0;">Ditt Spørsmål</h3>
+
+                <div class="form-group">
+                    <label for="category">Kategori *</label>
+                    <select id="category" name="category" required>
+                        <option value="">Velg kategori...</option>
+                        <option value="membership">Medlemskap</option>
+                        <option value="classes">Klasser</option>
+                        <option value="equipment">Utstyr</option>
+                        <option value="billing">Fakturering</option>
+                        <option value="facilities">Fasiliteter</option>
+                        <option value="other">Annet</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Emne *</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Melding *</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <div style="text-align: center;">
+                    <button type="submit" class="btn">Send Melding</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Kontakt info -->
+    <section style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2>Direkte Kontakt</h2>
+            <div class="support-grid">
+                <div class="support-card">
+                    <h3>Telefon</h3>
+                    <p><strong>+47 22 11 22 33</strong></p>
+                    <p style="font-size: 0.9rem; color: #666;">Mandag-Fredag: 06:00-22:00<br>Lørdag-Søndag: 08:00-20:00</p>
+                </div>
+                <div class="support-card">
+                    <h3>E-post</h3>
+                    <p><strong><a href="mailto:info@fitlife.no" style="color: #00a86b; text-decoration: none;">info@fitlife.no</a></strong></p>
+                    <p style="font-size: 0.9rem; color: #666;">Svar innen 24 timer</p>
+                </div>
+                <div class="support-card">
+                    <h3>📍 Besøk Oss</h3>
+                    <p><strong>Yrkesskolevegen 16</strong><br>7058 Trondheim<br>Norway</p>
+                    <p style="font-size: 0.9rem; color: #666;">Se åpningstider ovenfor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 FitLife Treningssentrum. Alle rettigheter reservert.</p>
+    </footer>
+
+    <script>
+        function toggleAnswer(element) {
+            const answer = element.nextElementSibling;
+            const toggle = element.querySelector('.faq-toggle');
+            
+            // Close other open answers
+            document.querySelectorAll('.faq-answer.open').forEach(item => {
+                if (item !== answer) {
+                    item.classList.remove('open');
+                    item.previousElementSibling.querySelector('.faq-toggle').textContent = '+';
+                }
+            });
+            
+            // Toggle current answer
+            answer.classList.toggle('open');
+            toggle.textContent = answer.classList.contains('open') ? '−' : '+';
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            
+            alert(`Takk ${name}! Din melding har blitt mottatt. Vi vil kontakte deg på ${email} innen 24 timer.`);
+            
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>

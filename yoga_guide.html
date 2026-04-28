@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogaklasse Bookingguide - FitLife</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .guide-section {
+            background: #f8f9fa;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            border-left: 4px solid #00d084;
+        }
+
+        .step {
+            background: white;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .step h3 {
+            color: #00a86b;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .step-number {
+            background: #00d084;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .info-card {
+            background: #f0f9f6;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #00d084;
+        }
+
+        .info-card h4 {
+            color: #00a86b;
+            margin-bottom: 0.5rem;
+        }
+
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .schedule-table th {
+            background: #00d084;
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .schedule-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .schedule-table tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        .tips-box {
+            background: #e8f5e9;
+            border-left: 4px solid #00d084;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .tips-box h4 {
+            color: #00a86b;
+            margin-bottom: 1rem;
+        }
+
+        .tips-box ul {
+            margin-left: 1.5rem;
+        }
+
+        .tips-box li {
+            margin: 0.5rem 0;
+            color: #333;
+        }
+
+        .warning-box {
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .warning-box h4 {
+            color: #ff9800;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo" style="text-decoration: none; color: white;">FitLife</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="index.html#classes">Klasser</a></li>
+                    <li><a href="index1.html">Brukerstøtte</a></li>
+                    <li><a href="yoga_guide.html">Yogaguide</a></li>
+                    <li style="border-left: 1px solid rgba(255,255,255,0.3); padding-left: 2rem;"><a href="yoga_guide_en.html">English</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="index.html">Hjem</a> > <span>Yogaguide</span>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>🧘 Yoga Bookingguide</h1>
+        <p>Lær hvordan du enkelt booker dine yogaklasser på FitLife</p>
+    </section>
+
+    <!-- Main Content -->
+    <section class="container" style="padding: 4rem 2rem;">
+        
+        <!-- Introduksjon -->
+        <div class="guide-section">
+            <h2>Velkommen til Yoga på FitLife</h2>
+            <p>Yoga er en fantastisk måte å forbedre fleksibilitet, styrke og mentalt velvære. FitLife tilbyr yogaklasser for alle nivåer, fra nybegynnere til erfarne praktiserende.</p>
+            <p><strong>Klasseplaner:</strong></p>
+            <ul style="margin: 1rem 0 0 1.5rem;">
+                <li>Mandag: 18:00 - 19:00</li>
+                <li>Onsdag: 18:00 - 19:00</li>
+            </ul>
+        </div>
+
+        <!-- Steg-for-steg guide -->
+        <h2 style="color: #2ecc71; margin: 3rem 0 2rem 0;">Steg-for-Steg Bookingguide</h2>
+
+        <div class="step">
+            <h3>
+                <span class="step-number">1</span>
+                Logg inn eller opprett konto
+            </h3>
+            <p>Besøk FitLife-nettstedet eller åpne appen. Hvis du allerede er medlem, logg inn med e-posten og passordet ditt. Hvis du er ny, opprett en konto ved å fylle inn navn, e-post og telefonnummer.</p>
+        </div>
+
+        <div class="step">
+            <h3>
+                <span class="step-number">2</span>
+                Gå til "Klasser" eller "Timebok"
+            </h3>
+            <p>I menyen finner du "Klasser" eller "Timebok" (avhengig av plattform). Klikk der for å se alle tilgjengelige klassene.</p>
+        </div>
+
+        <div class="step">
+            <h3>
+                <span class="step-number">2</span>
+                Velg "Yoga" fra klasselisten
+            </h3>
+            <p>I filtreringen eller klasselisten, søk etter "Yoga" eller velg det fra kategoriene. Du vil se alle yogaklasser for neste 4 uker.</p>
+        </div>
+
+        <div class="step">
+            <h3>
+                <span class="step-number">4</span>
+                Velg din foretrukne klasse og tid
+            </h3>
+            <p>Klikk på en yogaklasse du ønsker å delta i. Du vil se:</p>
+            <ul style="margin: 1rem 0 0 1.5rem;">
+                <li>Dato og tid for klassen</li>
+                <li>Instruktør navn</li>
+                <li>Antall ledige plasser</li>
+                <li>Vanskelighetsgrad (Nybegynner, Intermediate, Avansert)</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h3>
+                <span class="step-number">5</span>
+                Bekreft booking
+            </h3>
+            <p>Klikk "Book klasse" eller "Reservér plass". Systemet vil vise deg en bekreftelsesskjerm. Gjennomgå detaljene og klikk "Bekreft booking".</p>
+        </div>
+
+        <div class="step">
+            <h3>
+                <span class="step-number">6</span>
+                Motta bekreftelses-e-post
+            </h3>
+            <p>Du vil motta en bekreftelses-e-post på den registrerte e-posten din med:</p>
+            <ul style="margin: 1rem 0 0 1.5rem;">
+                <li>Klassetype og dato/tid</li>
+                <li>Instruktør navn</li>
+                <li>Klasserom lokasjon</li>
+                <li>Påminnelse om avbooking-fristen</li>
+            </ul>
+        </div>
+
+        <!-- Yogaklasseoversikt -->
+        <h2 style="color: #2ecc71; margin: 3rem 0 2rem 0;">Yogaklasseoversikt</h2>
+        
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th>Dag</th>
+                    <th>Tid</th>
+                    <th>Vanskelighetsgrad</th>
+                    <th>Instruktør</th>
+                    <th>Maks deltakere</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mandag</td>
+                    <td>18:00 - 19:00</td>
+                    <td>Alle nivåer</td>
+                    <td>Anna Nilsen</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Onsdag</td>
+                    <td>18:00 - 19:00</td>
+                    <td>Intermediate</td>
+                    <td>Marcus Berg</td>
+                    <td>20</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Informasjon -->
+        <h2 style="color: #2ecc71; margin: 3rem 0 2rem 0;">Viktig Informasjon</h2>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <h4>📅 Bookingperiode</h4>
+                <p>Du kan booke klasser opptil 4 uker på forhånd. Klasser fylles raskt i peak-tider.</p>
+            </div>
+
+            <div class="info-card">
+                <h4>⏰ Avbooking</h4>
+                <p>Avbook minst 24 timer før klassen for å frigjøre plassen for andre medlemmer.</p>
+            </div>
+
+            <div class="info-card">
+                <h4>📱 Påminnelser</h4>
+                <p>Du mottar automatisk påminnelser via e-post og SMS (hvis aktivert) dagen før klassen.</p>
+            </div>
+
+            <div class="info-card">
+                <h4>🔄 Klassetype</h4>
+                <p>Velg klasser som passer til ditt nivå. Alle klasser er tilgjengelige for medlemmer.</p>
+            </div>
+        </div>
+
+        <!-- Tips -->
+        <div class="tips-box">
+            <h4>💡 Nyttige Tips</h4>
+            <ul>
+                <li><strong>Kom tidlig:</strong> Kom 10-15 minutter før klassens starttid for å sette opp yogamatte og varme opp</li>
+                <li><strong>Hva skal du ta med:</strong> Yogamatte (eller lån gratis mat på stedet), håndkle, drikkeflaska og komfortable klær</li>
+                <li><strong>Besøk samme klasse:</strong> Du kan velge samme klasse hver uke. Klikkauf "Gjenta ukentlig" for automatisk booking</li>
+                <li><strong>Prøv nye klasser:</strong> Eksperimenter med ulike instruktører og vanskelighetsgrader for å finne det som passer best</li>
+                <li><strong>Avlyste klasser:</strong> Hvis en klasse avlyses, vil du få beskjed via e-post. Du kan automatisk booker på en annen klasse</li>
+            </ul>
+        </div>
+
+        <!-- Advarsler -->
+        <div class="warning-box">
+            <h4>⚠️ Viktig å merke seg</h4>
+            <ul style="margin: 1rem 0 0 1.5rem;">
+                <li>Hvis du ikke møter opp 15 minutter etter klassens start, kan plassen din bli gitt til andre</li>
+                <li>Husk å avbooke på tide hvis du ikke kan møte - det hjelper andre medlemmer</li>
+                <li>Hvis du har skader eller helseplager, si ifra til instruktøren før klassen starter</li>
+                <li>Yoga krever ikke ekstra betalingu utover medlemskapet ditt</li>
+            </ul>
+        </div>
+
+        <!-- Kontakt -->
+        <div class="guide-section" style="margin-top: 3rem;">
+            <h3>Trenger du hjelp?</h3>
+            <p>Hvis du har problemer med bookingen, kontakt oss:</p>
+            <ul style="margin: 1rem 0 0 1.5rem;">
+                <li>📞 Telefon: +47 22 11 22 33 (Mandag-Fredag 06:00-22:00)</li>
+                <li>📧 E-post: info@fitlife.no</li>
+                <li>💬 Chat: Tilgjengelig på nettstedet mandag-fredag 09:00-17:00</li>
+            </ul>
+            <p style="margin-top: 1rem;"><a href="index1.html" style="color: #2ecc71; font-weight: bold; text-decoration: none;">Les mer i Brukerstøtte →</a></p>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 FitLife Treningssentrum. Alle rettigheter reservert.</p>
+    </footer>
+</body>
+</html>
